@@ -1,0 +1,69 @@
+# =====================================
+# ATAJOS MÁS USADOS EN VS CODE
+# =====================================
+
+# Buscar texto
+# Ctrl + F
+
+# Buscar y reemplazar
+# Ctrl + H
+
+# Buscar en todo el proyecto
+# Ctrl + Shift + F
+
+# Seleccionar siguiente coincidencia
+# Ctrl + D
+
+# Seleccionar TODAS las coincidencias
+# Ctrl + Shift + L
+
+# Renombrar variable/clase inteligentemente
+# F2
+
+# Ir a definición
+# F12
+
+# Abrir archivos rápidamente
+# Ctrl + P
+
+# Ir a línea específica
+# Ctrl + G
+
+# Abrir terminal integrada
+# Ctrl + `
+
+# Comentar línea
+# Ctrl + /
+
+# Formatear código automáticamente
+# Shift + Alt + F
+
+# Duplicar línea
+# Shift + Alt + ↓
+
+# Mover línea arriba/abajo
+# Alt + ↑ / ↓
+
+# Borrar línea completa
+# Ctrl + Shift + K
+
+# Cambiar entre pestañas
+# Ctrl + Tab
+
+# Cerrar pestaña
+# Ctrl + W
+
+# Ejecutar programa/debug
+# F5
+
+# Ejecutar sin debugger
+# Ctrl + F5
+
+# Multi cursor
+# Alt + Click
+
+# Cursor múltiple arriba/abajo
+# Ctrl + Alt + ↑ / ↓
+
+# Abrir Command Palette
+# Ctrl + Shift + P
