@@ -67,3 +67,177 @@
 
 # Abrir Command Palette
 # Ctrl + Shift + P
+
+# ============================================
+# TUTORIAL BÁSICO DE GIT + GITHUB
+# ============================================
+
+# ============================================
+# 1. INICIAR GIT EN UN PROYECTO
+# ============================================
+
+# Abre la terminal dentro de VS Code
+# Ctrl + `
+
+# Inicializar repositorio Git
+# (solo se hace UNA vez por proyecto)
+
+# git init
+
+
+# ============================================
+# 2. VER ESTADO DEL PROYECTO
+# ============================================
+
+# Muestra:
+# - archivos modificados
+# - archivos nuevos
+# - archivos preparados
+
+# git status
+
+
+# ============================================
+# 3. AGREGAR ARCHIVOS
+# ============================================
+
+# Agregar TODOS los archivos
+
+# git add .
+
+# Agregar UN solo archivo
+
+# git add main.py
+
+# Agregar varios archivos específicos
+
+# git add main.py enemy.py
+
+
+# ============================================
+# 4. CREAR UN COMMIT
+# ============================================
+
+# Un commit es como una "foto" del proyecto
+
+# git commit -m "Primer commit del juego"
+
+# Ejemplos:
+
+# git commit -m "Agregué enemigos"
+# git commit -m "Corregí colisiones"
+# git commit -m "Agregué menú principal"
+
+
+# ============================================
+# 5. CONECTAR CON GITHUB
+# ============================================
+
+# Conectar repo local con GitHub
+
+# git remote add origin URL_DEL_REPO
+
+# Ejemplo:
+# git remote add origin https://github.com/usuario/proyecto.git
+
+
+# ============================================
+# 6. CAMBIAR RAMA A MAIN
+# ============================================
+
+# git branch -M main
+
+
+# ============================================
+# 7. SUBIR PROYECTO A GITHUB
+# ============================================
+
+# Primera vez:
+
+# git push -u origin main
+
+# Después solo:
+
+# git push
+
+
+# ============================================
+# 8. DESCARGAR CAMBIOS
+# ============================================
+
+# Descargar cambios desde GitHub
+
+# git pull
+
+
+# ============================================
+# 9. VER HISTORIAL DE COMMITS
+# ============================================
+
+# git log
+
+
+# ============================================
+# 10. CREAR NUEVA RAMA
+# ============================================
+
+# git checkout -b nueva-rama
+
+# Ejemplo:
+# git checkout -b sistema-sonidos
+
+
+# ============================================
+# 11. CAMBIAR ENTRE RAMAS
+# ============================================
+
+# git checkout nombre-rama
+
+
+# ============================================
+# 12. ELIMINAR ARCHIVO DEL STAGE
+# ============================================
+
+# Si hiciste git add por error
+
+# git restore --staged archivo.py
+
+
+# ============================================
+# WORKFLOW NORMAL DE PROGRAMACIÓN
+# ============================================
+
+# 1. Haces cambios
+# 2. git status
+# 3. git add .
+# 4. git commit -m "mensaje"
+# 5. git push
+
+
+# ============================================
+# ATAJOS IMPORTANTES VS CODE
+# ============================================
+
+# Abrir terminal
+# Ctrl + `
+
+# Buscar
+# Ctrl + F
+
+# Buscar y reemplazar
+# Ctrl + H
+
+# Seleccionar todas las coincidencias
+# Ctrl + Shift + L
+
+# Renombrar inteligentemente
+# F2
+
+# Formatear código
+# Shift + Alt + F
+
+# Comentar línea
+# Ctrl + /
+
+# Abrir Command Palette
+# Ctrl + Shift + P
