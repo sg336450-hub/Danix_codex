@@ -2,28 +2,30 @@
 
 import pygame
 from config import WIDTH, HEIGHT, PLAYER_SPEED, Colors
+import os
 
+BASE_DIR = os.path.dirname(__file__)
+
+player_path = os.path.join(BASE_DIR, "assets", "player.png")
 
 class Player:
 
     def __init__(self):
-        self.image = pygame.image.load(
-            "assets/player.png"
-         ).convert_alpha()
-
-        self.rect = self.image.get_rect()
-
-        self.rect.center = (WIDTH // 2, HEIGHT - 100)
 
         self.image = pygame.image.load(
-    "assets/player.png"
-).convert_alpha()
+            player_path
+        ).convert_alpha()
 
         self.image = pygame.transform.scale(
-        self.image,
-        (64, 64)
-)
+            self.image,
+            (64, 64)
+        )
+
         self.rect = self.image.get_rect()
+        self.rect.center = (WIDTH // 2, HEIGHT - 100)
+
+        self.max_health = 100
+        self.health = 100
 
     def move(self, keys):
 
@@ -53,7 +55,7 @@ class Player:
             self.rect.bottom = HEIGHT - 5 
 
     def draw(self, screen):
-        pygame.draw.rect(screen, Colors.GREEN, self.rect)
+        screen.blit(self.image, self.rect)
 
     def draw_healthbar(self, screen):
         ratio = self.health / self.max_health

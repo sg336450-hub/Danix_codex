@@ -1,6 +1,11 @@
 # game.py
 
 import pygame
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+
+background_path = os.path.join(BASE_DIR, "assets", "enemy.png")
 
 from config import WIDTH, HEIGHT, FPS, Colors
 from player import Player
@@ -14,10 +19,7 @@ class Game:
     def __init__(self, enemies_count=3, powerups_count=2):
 
         pygame.init()
-
-        self.background = pygame.image.load(
-           "assets/background.png"
-        ).convert()
+        
 
         self.lifes = 3
 
@@ -28,6 +30,10 @@ class Game:
 
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("ESQUIVA LOS ENEMIGOS")
+
+        self.background = pygame.image.load(background_path).convert()
+
+        self.background = pygame.image.load(background_path).convert()
 
         self.clock = pygame.time.Clock()
 
@@ -128,7 +134,7 @@ class Game:
     # =========================
     def draw(self):
 
-        self.screen.blit(self.background, (0, 0))
+        self.screen.fill((20, 20, 30))
 
         self.player.draw(self.screen)
 
